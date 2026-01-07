@@ -1,0 +1,21 @@
+table {
+        
+        border-collapse: collapse;
+    }
+
+    th {
+        background-color: bisque;
+
+    }
+
+    td {
+        background-color: rgb(248, 238, 225);
+    }
+
+    th, td {
+        border: 2px solid black;
+    }
+
+    body {
+        background-color: rgb(203, 196, 171);
+    }
