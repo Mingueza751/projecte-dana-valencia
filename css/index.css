@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -60,3 +61,32 @@ footer{
     background-color: gray;
 }
 
+=======
+ body {
+            text-align: center;
+            background-color: rgb(181, 139, 100);
+            
+        }
+
+        img {
+            height: auto;
+            width: auto;
+        }
+
+        nav {
+            text-align: left;
+            
+            
+            background-color: bisque;
+            padding: 30px;
+            margin-bottom: 0%;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+
+        div {
+            padding-top: 5%;
+            background-color: burlywood;
+            margin-top: 0%;
+        }
+>>>>>>> 1f0b139651c66767da6f85a4c18206c8aa0cc606
