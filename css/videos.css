@@ -53,9 +53,15 @@ body{
 }
 
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 50px;
     background-color: gray;
+}
+
+video{
+    height: auto;
+    max-height: 600px;
+    width: auto;    
 }
