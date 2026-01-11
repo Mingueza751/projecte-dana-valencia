@@ -1,57 +1,69 @@
+/* Estils generals */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estils per al header amb espai entre els elements */
 header{
     width: 100%;
     height: 150px;
-    background-color: gray;
-    border: solid 3px;
+    background-color: rgb(29, 28, 28);
+    border-bottom: solid 3px rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
 }
-
-nav{
-    margin-top: 75px;
-    height: 75px;
-    
-    text-align: center;
-    padding-top: 25px;
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-    margin-right: 10px;
-}
-
-nav a:hover{
-    background-color: rgb(109, 108, 108);
-    color: rgb(226, 224, 224);
-}
-
 
 header h1{
     padding: 20px;
-    
-    float: left;
     height: 75px;
-    
+    font-size: 40px; 
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 50px;
+    color: white;
 }
 
-
+/* Estils per al logo que es mostre redonet i pegat a la dreta */
 #logo{
-    float: right;
+    
+    flex-direction: row-reverse;
     margin: 30px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
 }
 
-body{
-    height: auto;
+/* Estils per al menu de navegacio lateral */
+nav{
+    height: 100%;
+    text-align: center;
+    align-content: center;
 }
 
+li{
+    list-style: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a:hover{
+    background-color: rgb(46, 44, 44);
+    color: rgb(226, 224, 224)
+    
+}
+
+/* Estils per al footer pegat al final de la pàgina i de forma fixa */
 footer{
     position: fixed;
     bottom: 0;
@@ -59,3 +71,67 @@ footer{
     height: 50px;
     background-color: gray;
 }
+
+body {
+    height: auto;
+    text-align: center;
+    
+            
+}
+
+/* Estils per al contingut principal amb seccio, aside i main*/
+
+main{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 800px;
+    
+}
+
+
+
+section{
+    width: 80%;
+    background-color: rgb(147, 148, 147);
+    float: left;
+    height: 100%;
+    padding: 10px;
+    
+}
+
+aside{
+    width: 20%;
+    background-color: rgb(69, 69, 70);
+    float: left;
+    height: 50%;
+    border-left: solid 3px black;
+    
+}
+
+aside div{
+    background-color: rgb(69, 69, 70);
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+
+div h3{
+    padding: 10px;
+    background-color: rgb(133, 133, 133);
+
+}
+
+div ul{
+    margin-top: 30px;
+}
+
+section img {
+height: auto;
+width: auto;
+
+}
+
+
+        
+
+
