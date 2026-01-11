@@ -24,9 +24,13 @@
     
     <section> 
         
-       <h1>Formulari de contacte sobre la DANA</h1>
+       <h2 id="titol">Formulari de contacte sobre la DANA</h1>
   <form action="" method="post">
     
+    <fieldset>
+
+        <legend>Dades personals</legend>
+
     <label for="nom">Nom complet:</label>
     <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom" required><br><br>
 
@@ -36,6 +40,12 @@
     <label for="any">Any de naixement:</label>
     <input type="number" id="any" name="any" min="1900" max="2025"><br><br>
 
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Experiència amb la DANA</legend>
+
     <p>Has patit danys per la DANA a València?</p>
     <input type="radio" id="si" name="danys" value="sí" required>
     <label for="si">Sí</label>
@@ -44,6 +54,12 @@
 
     <input type="checkbox" id="ajuda" name="ajuda" value="necessita">
     <label for="ajuda">Necessite ajuda o assessorament</label><br><br>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Detalls addicionals</legend>
 
     <label for="municipi">Municipi afectat:</label>
     <select id="municipi" name="municipi" required>
@@ -57,7 +73,9 @@
     <label for="comentaris">Comentaris o experiència personal:</label><br>
     <textarea id="comentaris" name="comentaris" rows="5" cols="40" placeholder="Explica la teva experiència"></textarea><br><br>
    
-    <button type="submit">Enviar</button>
+    </fieldset>
+
+    <button id="enviar" type="submit">Enviar</button>
 
   </form>
 
