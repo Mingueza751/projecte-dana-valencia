@@ -135,24 +135,99 @@ width: auto;
 
 }
 
+
+/* Selector d'ID per a la secció d'informació */
+#info-dana {
+padding: 25px;
+max-width: 900px;
+margin: 0 auto;
+}
+/* Selector de classe per al contenidor que envolta la taula */
+.contenidor-taula {
+margin: 40px auto;
+width: 95%;
+}
+/* Selector descendent per a les cel·les de capçalera dins de la taula */
+table th {
+background-color: #d9534f;
+color: white;
+padding: 15px;
+}
+/* Selector de fills per als paràgrafs directes de la secció informativa */
+#info-dana > p {
+line-height: 1.8;
+margin-bottom: 15px;
+}
+/* Selector d'atribut per a elements amb el títol específic */
+h1[title="titol-principal"] {
+letter-spacing: 1px;
+}
+/* Pseudo-classe per canviar el color en passar el ratolí */
+.tancat:hover {
+color: #a94442;
+}
+/* Pseudo-element per afegir un detall visual després del subtítol */
+h2::after {
+content: " | València";
+color: #e67e22;
+font-size: 0.8em;
+}
+
+
+
+
+/* Propietats de posicionament i vora amb imatge degradada */
 table {
-        
-        border-collapse: collapse;
-    }
+display: table;
+position: relative;
+border-collapse: collapse;
+width: 100%;
 
-    th {
-        background-color: bisque;
+border: 8px solid;
+border-image: linear-gradient(to right, #d9534f, #f0ad4e) 1;
+}
+/* Ús de gradients radials, ombres de text i de caixa */
+h2 {
+text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+background: radial-gradient(circle, #ffffff, #eeeeee);
+}
+/* Ús de vores arredonides i ombres internes a les cel·les */
+td {
+padding: 20px;
+text-align: center;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-shadow: inset 2px 2px 5px rgba(0,0,0,0.05);
+}
 
-    }
 
-    td {
-        background-color: rgb(248, 238, 225);
-    }
 
-    th, td {
-        border: 2px solid black;
-    }
 
-    body {
-        background-color: rgb(203, 196, 171);
-    }
+/* Selector de germà adjacent per donar estil al paràgraf que segueix a un altre */
+p + p {
+font-weight: bold;
+color: #444;
+}
+/* Ús de nth-child amb opcions parell i senar per a les files de la taula */
+table tbody tr:nth-child(even) {
+background-color: #fcfcfc;
+}
+table tbody tr:nth-child(odd) {
+background-color: #f2f2f2;
+}
+/* Ús de flexbox per a la disposició dels elements informatius */
+#info-dana {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+/* Transformacions i transicions per a l'efecte visual en la taula */
+table tr {
+transition: transform 0.4s ease-in-out, background-color 0.3s;
+}
+table tr:hover {
+transform: scale(1.02);
+background-color: #fff0f0 !important;
+cursor: default;
+}
