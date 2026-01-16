@@ -81,8 +81,14 @@ a:hover{
 body {
     height: auto;
     text-align: center;
+          
+}
+
+#titulo_periodicos{
+    background-color: rgb(133, 133, 133);
+    padding: 10px;
+    margin-bottom: 10px;
     
-            
 }
 
 /* Estils per al contingut principal amb seccio, aside i main*/
