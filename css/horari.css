@@ -96,7 +96,7 @@ body {
 main{
     width: 100%;
     background-color: rgb(0, 0, 0);
-    height: 800px;
+    height: 1500px;
     
 }
 
@@ -161,11 +161,6 @@ background-color: #d9534f;
 color: white;
 padding: 15px;
 }
-/* Selector de fills per als paràgrafs directes de la secció informativa */
-#info-dana > p {
-line-height: 1.8;
-margin-bottom: 15px;
-}
 /* Selector d'atribut per a elements amb el títol específic */
 h1[title="titol-principal"] {
 letter-spacing: 1px;
@@ -189,7 +184,7 @@ table {
 display: table;
 position: relative;
 border-collapse: collapse;
-width: 100%;
+width: 80%;
 
 border: 8px solid;
 border-image: linear-gradient(to right, #d9534f, #f0ad4e) 1;
@@ -238,4 +233,54 @@ table tr:hover {
 transform: scale(1.02);
 background-color: #fff0f0 !important;
 cursor: default;
+}
+
+
+.contenidor-taula {
+    width: 100%;            
+    overflow-x: auto;        
+    display: block;         
+}
+
+/* --- ESTIL DELS RECUADRES GRISOS AMB BORDES --- */
+
+.targeta-informativa {
+    background-color: #808080 !important; /* Gris unificat segons imatges */
+    margin: 20px auto;
+    padding: 25px;
+    width: 95%;
+    box-sizing: border-box;
+    color: #000000;
+    
+    /* Fase 4: Borde amb gradient taronja-roig de la paleta */
+    border: 4px solid #d9534f;
+    border-image: linear-gradient(to right, #d9534f, #f0ad4e) 1;
+    
+    /* Fase 4: Ombra de caixa per donar profunditat */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+/* --- ANIMACIÓ DE TRANSICIÓ I TRANSFORMACIÓ (Fase 5) --- */
+
+.enllac-titol {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    
+    /* Definició de la transició suau per al moviment i el color */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s;
+}
+
+/* Efecte al passar el ratolí o presionar el títol */
+.enllac-titol:hover {
+    /* Transformació: escala l'element i el desplaça horitzontalment */
+    transform: scale(1.05) translateX(15px);
+    color: #d9534f; /* Canvi al roig de la paleta */
+}
+
+section{
+    background-color: grey;
 }
