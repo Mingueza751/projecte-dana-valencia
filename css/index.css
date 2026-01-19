@@ -96,14 +96,14 @@ body {
 main{
     width: 100%;
     background-color: rgb(0, 0, 0);
-    height: 800px;
+    height: 1000px;
     
 }
 
 
 
 section{
-    width: 80%;
+    width: 79%;
     background-color: rgb(147, 148, 147);
     float: left;
     height: 100%;
@@ -112,7 +112,7 @@ section{
 }
 
 aside{
-    width: 20%;
+    width: 19%;
     background-color: rgb(69, 69, 70);
     float: left;
     height: 50%;
@@ -145,103 +145,40 @@ width: auto;
 
 
 
-/* Selector universal: margin, padding i tipografia */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
 
-/* Selector d'elements: estils de capçaleres i paràgrafs */
-h1, h2 { color: #1a1a1a; margin-bottom: 20px; }
-p { font-size: 1.1rem; line-height: 1.8; color: #333; }
-
-/* Selector ID: l'índex principal */
 #info-dana {
-    padding: 40px;
-    width: 100%;
-    background-color: #f9f9f9;
-    border-bottom: 2px solid #ddd;
+    background-color: rgb(133, 133, 133);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(124, 124, 124);
+    margin-bottom: 10px;
 }
 
-/* Selector class: la imatge de portada */
-.imatge-portada {
-    display: block;
-    margin: 30px auto;
-    max-width: 100%;
-    border-radius: 10px; 
-}
-
-/* Selector descendents: negreta dins de la cronologia */
-.llista-dades li b {
-    color: #d9534f;
-}
-
-/* Selector fills: paràgrafs directes del bloc tècnic */
-.context-tecnic > p {
-    margin-bottom: 15px;
-    padding: 0 20px;
-}
-
-
-
-
-
-
-/* Estil de la llista (cronologia) */
-.llista-dades {
-    list-style: none;
-    max-width: 800px;
-    margin: 0 auto;
-    /* Gradient lineal per a l'efecte visual */
-    background: linear-gradient(to bottom, #ffffff, #fdf2f2); /* linear-gradient */
-    padding: 20px;
-    border-radius: 15px;
-}
-
-.llista-dades li {
+#imatge-portada {
+    background-color: rgb(133, 133, 133);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(124, 124, 124); 
+    margin-bottom: 10px;
     padding: 10px;
-    border-bottom: 1px dashed #ccc;
+    
 }
 
-
-
-
-
-
-/* Selector de germà adjacent: espaiat després de l'h2 */
-h2 + p {
-    font-weight: 500;
-    color: #555;
+#imagen {
+    width: 500px;
+    height: 350px;
+    border: solid 5px black;
+    border-radius:5px;
 }
 
-/* nth-child: colors alterns per a la cronologia */
-.llista-dades li:nth-child(odd) { background-color: rgba(255,255,255,0.5); }
-.llista-dades li:nth-child(even) { background-color: rgba(240,240,240,0.5); }
-
-/* Ús de Flexbox per centrar l'índex i els blocs */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
+#context-tecnic {
+    background-color: rgb(133, 133, 133);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(124, 124, 124);
+    margin-bottom: 10px;
 }
 
-.context-tecnic, .cronologia {
-    width: 80%;
-    margin-top: 40px;
-    text-align: center;
+#cronologia {
+    background-color: rgb(133, 133, 133);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(124, 124, 124);
+    margin-bottom: 10px;
 }
-
-/* Transformacions i transicions a la imatge i el botó */
-.imatge-portada {
-    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.imatge-portada:hover {
-    transform: scale(1.03); /* Transformació */
-}
-
-        
-
-
